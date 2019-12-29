@@ -36,7 +36,7 @@
                                                     fieldLabel="Header Logo"
                                                     fieldDescription="Drop a logo from the DAM here"
                                                     fileNameParameter="./primaryLogo"
-                                                    fileReferenceParameter="./headerLogo"
+                                                    fileReferenceParameter="./footerLogo"
                                                     mimeTypes="[image]"
                                                     multiple="{Boolean}false"
                                                     name="./file"
