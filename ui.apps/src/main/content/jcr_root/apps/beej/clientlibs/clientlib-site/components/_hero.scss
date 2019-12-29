@@ -1,0 +1,11 @@
+.beej-hero {
+  height: 300px;
+
+  &-content {
+    color: white;
+  }
+
+  @media(min-width: 768px) {
+    height: 600px;
+  }
+}

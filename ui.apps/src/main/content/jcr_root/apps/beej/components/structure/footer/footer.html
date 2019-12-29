@@ -1,0 +1,20 @@
+<header class="beej-header">
+    <div class="beej-header__container margins">
+        <a class="beej-header__logo" href="${properties.logoURL}">
+            <img class="beej-header__logo-img" src="${properties.headerLogo}">
+        </a>
+<!--        <nav class="beej-header__nav" data-sly-use.multiFieldHelper="${'com/adobe/aem/demo/beej/core/models/MultifieldHelper' @ multifieldNodeName='navItems'}">-->
+<!--            <sly data-sly-list.item="${multiFieldHelper.itemsList}">-->
+<!--                <a class="beej-header__nav-item" href="${item.navLinkURL}" target="${item.navLinkTarget}">${item.navLinkText}</a>-->
+<!--            </sly>-->
+<!--        </nav>-->
+        <nav class="beej-header__nav">
+            <a class="beej-header__nav-item" href="*">Home</a>
+            <a class="beej-header__nav-item" href="*">Articles</a>
+            <a class="beej-header__nav-item" href="*">About</a>
+            <a class="beej-header__nav-item" href="*">Contact</a>
+
+        </nav>
+    </div>
+</header>
+<h1>${currentPage.title ? currentPage.title : 'header'}</h1>

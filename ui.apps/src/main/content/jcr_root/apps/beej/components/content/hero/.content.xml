@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root
+        xmlns:sling="https://sling.apache.org/jcr/sling/1.0"
+        xmlns:jcr="https://www.jcp.org/jcr/1.0"
+        jcr:primaryType="cq:Component"
+        jcr:title="Hero Component"
+        jcr:description="Hero Component"
+        componentGroup="BEEJ.Content"
+        sling:resourceSuperType="core/wcm/components/image/v2/image"/>

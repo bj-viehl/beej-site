@@ -1,0 +1,22 @@
+.beej-header {
+  height: 90px; }
+  .beej-header__container {
+    display: flex;
+    align-items: center; }
+  .beej-header__logo-img {
+    height: 50px; }
+  .beej-header__nav {
+    display: flex;
+    align-items: center; }
+  .beej-header__nav-item {
+    margin: 0 10px;
+    padding: 0 20px;
+    font-weight: bold; }
+
+.beej-hero {
+  height: 300px; }
+  .beej-hero-content {
+    color: white; }
+  @media (min-width: 768px) {
+    .beej-hero {
+      height: 600px; } }
