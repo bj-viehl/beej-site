@@ -41,7 +41,6 @@ local.properties
 # TeXlipse plugin
 .texlipse
 
-
 ### Java ###
 *.class
 
@@ -73,7 +72,6 @@ buildNumber.properties
 ## Node ##
 package.json
 package-lock.json
-node_modules/
 node_modules
 
 ### Vault ###
