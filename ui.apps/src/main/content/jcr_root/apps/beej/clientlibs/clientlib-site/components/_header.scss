@@ -1,19 +1,28 @@
 .beej-header {
-  height: 80px;
+  position: relative;
 
   &__container {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 60px;
     padding: 10px 20px;
   }
 
+  &__logo {
+    height: 30px;
+  }
+
   &__logo-img {
-    height: 40px;
+    height: 30px;
   }
 
   &__nav {
     display: none;
     background-image: linear-gradient($color-primary-cyan, $color-primary-magenta);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
   }
 
   &__nav-item {
@@ -29,11 +38,30 @@
     }
   }
 
+  &__menu-button {
+    &:after {
+      height: 50px;
+      width: 50px;
+      content: url('src/main/content/jcr_root/etc/icons/close-icon.svg');
+    }
+    &--open {
+      &:after {
+        content: url('src/main/content/jcr_root/etc/icons/menu-icon.svg');
+      }
+    }
+  }
+
   @media (min-width: $breakpoint-md) {
-    height: 100px;
+    &__container {
+      height: 90px;
+    }
+
+    &__logo {
+      height: 50px;
+    }
 
     &__logo-img {
-      height: 60px;
+      height: 50px;
     }
 
     &__nav {
@@ -48,6 +76,10 @@
 
     &__nav-item {
       color: $text-color-dark;
+    }
+
+    &__menu-button {
+      display: none;
     }
   }
 }

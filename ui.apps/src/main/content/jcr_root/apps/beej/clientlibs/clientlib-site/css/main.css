@@ -43,16 +43,23 @@ p {
 
 /* Component Styles */
 .beej-header {
-  height: 80px; }
+  position: relative; }
   .beej-header__container {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 60px;
     padding: 10px 20px; }
+  .beej-header__logo {
+    height: 30px; }
   .beej-header__logo-img {
-    height: 40px; }
+    height: 30px; }
   .beej-header__nav {
     display: none;
-    background-image: linear-gradient(cyan, magenta); }
+    background-image: linear-gradient(cyan, magenta);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px; }
   .beej-header__nav-item {
     color: white;
     margin: 0 10px;
@@ -62,19 +69,29 @@ p {
     .beej-header__nav-item:hover {
       background: #FFFFFF;
       color: magenta; }
+  .beej-header__menu-button:after {
+    height: 50px;
+    width: 50px;
+    content: url("src/main/content/jcr_root/etc/icons/close-icon.svg"); }
+  .beej-header__menu-button--open:after {
+    content: url("src/main/content/jcr_root/etc/icons/menu-icon.svg"); }
   @media (min-width: 768px) {
-    .beej-header {
-      height: 100px; }
-      .beej-header__logo-img {
-        height: 60px; }
-      .beej-header__nav {
-        background: transparent;
-        display: block; }
-      .beej-header__nav-items {
-        display: flex;
-        align-items: center; }
-      .beej-header__nav-item {
-        color: #343434; } }
+    .beej-header__container {
+      height: 90px; }
+    .beej-header__logo {
+      height: 50px; }
+    .beej-header__logo-img {
+      height: 50px; }
+    .beej-header__nav {
+      background: transparent;
+      display: block; }
+    .beej-header__nav-items {
+      display: flex;
+      align-items: center; }
+    .beej-header__nav-item {
+      color: #343434; }
+    .beej-header__menu-button {
+      display: none; } }
 
 .beej-footer {
   background: #343434; }
@@ -84,7 +101,7 @@ p {
     flex-direction: column;
     padding: 60px 20px; }
   .beej-footer__logo-img {
-    height: 50px;
+    height: 40px;
     opacity: .5; }
   .beej-footer__nav {
     margin: 20px 0; }
@@ -97,7 +114,7 @@ p {
     display: flex;
     align-items: center; }
     .beej-footer__nav-item:hover {
-      color: pink; }
+      color: magenta; }
   .beej-footer__legal-text {
     font-size: .75rem; }
   @media (min-width: 768px) {
