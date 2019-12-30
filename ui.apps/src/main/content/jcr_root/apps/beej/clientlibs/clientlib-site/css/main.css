@@ -51,11 +51,50 @@ p {
     height: 50px; }
   .beej-header__nav {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    background-image: linear-gradient(cyan, magenta); }
   .beej-header__nav-item {
+    color: white;
     margin: 0 10px;
     padding: 0 20px;
     font-weight: bold; }
+  @media (min-width: 768px) {
+    .beej-header__nav {
+      background: transparent; }
+    .beej-header__nav-item {
+      color: #343434; } }
+
+.beej-footer {
+  background: #343434; }
+  .beej-footer__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 20px; }
+  .beej-footer__logo-img {
+    height: 50px;
+    opacity: .5; }
+  .beej-footer__nav {
+    margin: 20px 0; }
+  .beej-footer__nav-item {
+    color: #e6e6e6;
+    margin: 0 10px;
+    padding: 0 20px;
+    font-weight: light;
+    height: 50px;
+    display: flex;
+    align-items: center; }
+    .beej-footer__nav-item:hover {
+      color: pink; }
+  .beej-footer__legal-text {
+    font-size: .75rem; }
+  @media (min-width: 768px) {
+    .beej-footer__nav {
+      margin: 50px 0;
+      display: flex;
+      align-items: center; }
+    .beej-footer__text {
+      font-size: 1rem; } }
 
 .beej-hero {
   height: 300px; }

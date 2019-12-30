@@ -11,13 +11,29 @@
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
+    display: none;
+    background-image: linear-gradient($color-primary-cyan, $color-primary-magenta);
   }
 
   &__nav-item {
+    color: white;
     margin: 0 10px;
     padding: 0 20px;
     font-weight: bold;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    &__nav {
+      background: transparent;
+    }
+
+    &__nav-items {
+      display: flex;
+      align-items: center;
+    }
+
+    &__nav-item {
+      color: $text-color-dark;
+    }
   }
 }

@@ -4,17 +4,20 @@
             <img class="beej-header__logo-img" src="${properties.headerLogo}">
         </a>
 <!--        <nav class="beej-header__nav" data-sly-use.multiFieldHelper="${'com/adobe/aem/demo/beej/core/models/MultifieldHelper' @ multifieldNodeName='navItems'}">-->
-<!--            <sly data-sly-list.item="${multiFieldHelper.itemsList}">-->
+<!--            <div class="beej-header__nav-items" data-sly-list.item="${multiFieldHelper.itemsList}">-->
 <!--                <a class="beej-header__nav-item" href="${item.navLinkURL}" target="${item.navLinkTarget}">${item.navLinkText}</a>-->
-<!--            </sly>-->
+<!--            </div>-->
 <!--        </nav>-->
         <nav class="beej-header__nav">
-            <a class="beej-header__nav-item" href="*">Home</a>
-            <a class="beej-header__nav-item" href="*">Articles</a>
-            <a class="beej-header__nav-item" href="*">About</a>
-            <a class="beej-header__nav-item" href="*">Contact</a>
-
+            <div class="beej-header__nav-items">
+                <a class="beej-header__nav-item" href="*">Home</a>
+                <a class="beej-header__nav-item" href="*">Articles</a>
+                <a class="beej-header__nav-item" href="*">About</a>
+                <a class="beej-header__nav-item" href="*">Contact</a>
+            </div>
         </nav>
+        <div class="beej-header__menu-button">
+            <
+        </div>
     </div>
 </header>
-<h1>${currentPage.title ? currentPage.title : 'header'}</h1>
