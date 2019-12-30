@@ -43,53 +43,73 @@ p {
 
 /* Component Styles */
 .beej-header {
-  position: relative; }
+  position: relative;
+  box-shadow: 0 0 8px 2px rgba(128, 128, 128, 0.25); }
   .beej-header__container {
     align-items: center;
     display: flex;
     height: 60px;
-    padding: 10px 20px; }
+    padding: 0 20px; }
   .beej-header__logo {
-    height: 30px; }
+    height: 30px;
+    flex-grow: 1; }
   .beej-header__logo-img {
     height: 30px; }
   .beej-header__nav {
     display: none;
-    background-image: linear-gradient(cyan, magenta);
+    background: magenta;
     position: absolute;
     left: 0;
     right: 0;
-    top: 60px; }
+    top: 60px;
+    z-index: 2; }
   .beej-header__nav-item {
     color: white;
-    margin: 0 10px;
+    margin: 0;
     padding: 0 20px;
-    font-weight: bold;
-    transition: all .25s ease-in-out; }
+    height: 50px;
+    transition: all .25s ease-in-out;
+    display: flex;
+    align-items: center; }
     .beej-header__nav-item:hover {
       background: #FFFFFF;
       color: magenta; }
-  .beej-header__menu-button:after {
-    height: 50px;
-    width: 50px;
-    content: url("src/main/content/jcr_root/etc/icons/close-icon.svg"); }
-  .beej-header__menu-button--open:after {
-    content: url("src/main/content/jcr_root/etc/icons/menu-icon.svg"); }
+  .beej-header__menu-button {
+    cursor: pointer;
+    height: 40px;
+    width: 40px; }
+    .beej-header__menu-button:after {
+      height: 50px;
+      width: 50px;
+      content: url("ui/apps/src/main/content/jcr_root/etc/icons/close-icon.svg"); }
+    .beej-header__menu-button--open:after {
+      content: url("ui/apps/src/main/content/jcr_root/etc/icons/close-icon.svg"); }
+    .beej-header__menu-button:hover {
+      background: #efefef; }
   @media (min-width: 768px) {
     .beej-header__container {
       height: 90px; }
     .beej-header__logo {
-      height: 50px; }
+      height: 50px;
+      flex-grow: 0; }
     .beej-header__logo-img {
       height: 50px; }
     .beej-header__nav {
       background: transparent;
-      display: block; }
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      position: relative;
+      top: 0; }
     .beej-header__nav-items {
       display: flex;
       align-items: center; }
     .beej-header__nav-item {
-      color: #343434; }
+      color: #343434;
+      margin: 0 10px; }
+      .beej-header__nav-item:hover {
+        background: #efefef;
+        color: magenta; }
     .beej-header__menu-button {
       display: none; } }
 
